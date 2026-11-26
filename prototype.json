@@ -1,0 +1,111 @@
+{
+  "title": "Local destinations in Where to Send",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "the Settings pages and menu, from #T6"
+    ]
+  },
+  "screens": [
+    {
+      "id": "where-local",
+      "title": "Where to Send: On this computer",
+      "criteria": [
+        "C10",
+        "C12"
+      ],
+      "shows": "Local Database and Daily Archive cards with switch, status, count and Test (added)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "3 Targets Ready",
+        "Delivery Status",
+        "18 Pending · 2 Failed",
+        "Local Records",
+        "4,812 Messages",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Where to Send",
+        "Margince CRM webhook & Google Sheets output",
+        "On this computer",
+        "Encrypted at rest",
+        "Local Database (SQLite)",
+        "Keeps every forwarded message on this computer, searchable in Local Records.",
+        "Healthy",
+        "4,812 messages",
+        "Test",
+        "Daily Archive (JSONL)",
+        "Writes one file per day with one message per line.",
+        "Paused",
+        "31 daily files",
+        "Test",
+        "Online destinations",
+        "Margince CRM Integration",
+        "Forward customer deals, transcripts, and contact cards into your pipeline.",
+        "CRM Webhook Endpoint URL",
+        "API Secret Token",
+        "Sync Frequency",
+        "Test CRM Connection",
+        "Google Sheets Export",
+        "Append new conversation transcripts into live spreadsheets."
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C1",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C2",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C3",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C4",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C5",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C6",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C7",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C8",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C9",
+      "why": "delivery engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C11",
+      "why": "delivery engine behaviour; nothing on screen"
+    }
+  ],
+  "differences": [
+    "Daily Archive is drawn off as a sample state; C10 says both are on at first."
+  ]
+}
