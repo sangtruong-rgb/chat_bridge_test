@@ -1,0 +1,193 @@
+{
+  "title": "Margince destination",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "wizard step 5, from #T11",
+      "the Where to Send page, from #T8 and #T11"
+    ]
+  },
+  "screens": [
+    {
+      "id": "destination-margince",
+      "title": "Step 5 with the Margince card",
+      "criteria": [
+        "C1",
+        "C11"
+      ],
+      "shows": "Margince CRM card with Connect (theirs)",
+      "text": [
+        "Choose Forwarding Destination",
+        "Route synchronized leads and conversations to Margince CRM or Google Sheets.",
+        "Margince CRM",
+        "Primary CRM",
+        "Forward leads, deals, and customer conversations directly to Margince.",
+        "Connect",
+        "Google Sheets",
+        "Google OAuth",
+        "Sign in with Google to auto-create and stream to your default spreadsheet.",
+        "Login with Google",
+        "Back",
+        "Skip for now"
+      ]
+    },
+    {
+      "id": "margince-config",
+      "title": "Configure Margince CRM",
+      "criteria": [
+        "C2",
+        "C11"
+      ],
+      "shows": "Endpoint, token, frequency, Test and Save (theirs)",
+      "text": [
+        "Configure Margince CRM",
+        "Enter your webhook endpoint URL and API secret token to forward deals and conversations.",
+        "Back to Destinations",
+        "Step 5 of 5 • CRM Setup",
+        "Margince CRM Integration",
+        "Primary CRM",
+        "Forward customer deals, transcripts, and contact cards into your pipeline.",
+        "CRM Webhook Endpoint URL",
+        "API Secret Token",
+        "Sync Frequency",
+        "Test CRM Connection",
+        "Cancel",
+        "Save & Connect Margince",
+        "Back to Destinations",
+        "Save & Connect"
+      ]
+    },
+    {
+      "id": "margince-tested",
+      "title": "Connection verified",
+      "criteria": [
+        "C4",
+        "C11"
+      ],
+      "shows": "The success message after Test (theirs)",
+      "text": [
+        "Configure Margince CRM",
+        "Enter your webhook endpoint URL and API secret token to forward deals and conversations.",
+        "Back to Destinations",
+        "Step 5 of 5 • CRM Setup",
+        "Margince CRM Integration",
+        "Primary CRM",
+        "Forward customer deals, transcripts, and contact cards into your pipeline.",
+        "CRM Webhook Endpoint URL",
+        "API Secret Token",
+        "Sync Frequency",
+        "Test CRM Connection",
+        "✓ Connection verified. Margince webhook responding (200 OK)",
+        "Cancel",
+        "Save & Connect Margince",
+        "Back to Destinations",
+        "Save & Connect"
+      ]
+    },
+    {
+      "id": "margince-connected",
+      "title": "Margince connected",
+      "criteria": [
+        "C5",
+        "C11"
+      ],
+      "shows": "Connected card with Configure (theirs)",
+      "text": [
+        "Choose Forwarding Destination",
+        "Route synchronized leads and conversations to Margince CRM or Google Sheets.",
+        "Margince CRM",
+        "Primary CRM",
+        "Connected • Streaming to api.margince.com (realtime)",
+        "Configure",
+        "Connected",
+        "Google Sheets",
+        "Google OAuth",
+        "Sign in with Google to auto-create and stream to your default spreadsheet.",
+        "Login with Google",
+        "Back",
+        "Explore ChatBridge"
+      ]
+    },
+    {
+      "id": "where-margince",
+      "title": "Where to Send: Margince",
+      "criteria": [
+        "C6",
+        "C11"
+      ],
+      "shows": "Margince card with switch and fields (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Where to Send",
+        "Margince CRM webhook & Google Sheets output",
+        "Margince CRM Integration",
+        "Forward customer deals, transcripts, and contact cards into your pipeline.",
+        "CRM Webhook Endpoint URL",
+        "API Secret Token",
+        "Sync Frequency",
+        "Test CRM Connection",
+        "Google Sheets Export",
+        "Append new conversation transcripts into live spreadsheets.",
+        "G",
+        "tuananh@gradion.ai",
+        "Connected",
+        "Unlink",
+        "Connected Spreadsheet Links",
+        "3",
+        "spreadsheets",
+        "APAC_Client_Communications_Log",
+        "View Config",
+        "Unlink",
+        "ChatBridge_Transcripts_2026",
+        "View Config",
+        "Unlink",
+        "Q4_Enterprise_Sales_Pipeline",
+        "View Config",
+        "Unlink",
+        "Create New Sheet Link"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C3",
+      "why": "validation messages not drawn; words in the criterion"
+    },
+    {
+      "criterion": "C7",
+      "why": "protocol behaviour"
+    },
+    {
+      "criterion": "C8",
+      "why": "timing"
+    },
+    {
+      "criterion": "C9",
+      "why": "protocol behaviour"
+    },
+    {
+      "criterion": "C10",
+      "why": "tests"
+    }
+  ],
+  "differences": [
+    "The connected card adds the frequency in brackets, as the prototype shows \"(realtime)\".",
+    "The disconnect question of C5 and the Settings Disconnect button of C6 are not drawn."
+  ]
+}
