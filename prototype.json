@@ -1,0 +1,186 @@
+{
+  "title": "Connect Zalo and WhatsApp in wizard step 1",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": []
+  },
+  "screens": [
+    {
+      "id": "connect-start",
+      "title": "Step 1, nothing connected",
+      "criteria": [
+        "C1",
+        "C11"
+      ],
+      "shows": "Two channel cards and a disabled Next button (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo Account",
+        "Pair your personal sales account or official OA to start syncing.",
+        "Click to Pair Zalo",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-zalo-qr",
+      "title": "Zalo QR code with countdown",
+      "criteria": [
+        "C2",
+        "C11"
+      ],
+      "shows": "The Zalo card turned to its QR code, countdown, regenerate and cancel (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo QR Code",
+        "00:59",
+        "✕",
+        "Simulate Scan",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-qr-expired",
+      "title": "QR code expired",
+      "criteria": [
+        "C3",
+        "C11"
+      ],
+      "shows": "\"Expired\" in place of the countdown (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo QR Code",
+        "Expired",
+        "✕",
+        "Simulate Scan",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-zalo-connected",
+      "title": "Zalo connected",
+      "criteria": [
+        "C6",
+        "C7",
+        "C11"
+      ],
+      "shows": "Connected card with name, phone, badge and Re-scan; Next enabled (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Account connected. You can link the second channel or proceed to DropNoise.",
+        "Connected",
+        "Sale Personal",
+        "+84 901 123 456",
+        "Ready to sync",
+        "Re-scan",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-whatsapp-link",
+      "title": "Pairing code link on the WhatsApp card",
+      "criteria": [
+        "C1",
+        "C4",
+        "C11"
+      ],
+      "shows": "The \"Use pairing code instead\" link under the WhatsApp button; agreed card texts (added)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo Account",
+        "Pair your personal Zalo account to start syncing.",
+        "Click to Pair Zalo",
+        "WhatsApp Account",
+        "Link your personal WhatsApp account.",
+        "Click to Pair WhatsApp",
+        "Use pairing code instead",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-whatsapp-phone",
+      "title": "WhatsApp pairing: phone number",
+      "criteria": [
+        "C4",
+        "C11"
+      ],
+      "shows": "Phone number field and \"Get pairing code\" (added)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo Account",
+        "Pair your personal Zalo account to start syncing.",
+        "Click to Pair Zalo",
+        "Link with phone number",
+        "Enter the phone number of your WhatsApp account, with country code.",
+        "Get pairing code",
+        "Use QR code instead",
+        "Next: DropNoise Filters"
+      ]
+    },
+    {
+      "id": "connect-whatsapp-code",
+      "title": "WhatsApp pairing: code shown",
+      "criteria": [
+        "C4",
+        "C11"
+      ],
+      "shows": "The 8-character code, where to enter it and \"Waiting for your phone...\" (added)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Click Zalo or WhatsApp below to scan its QR code and link your account.",
+        "Zalo Account",
+        "Pair your personal Zalo account to start syncing.",
+        "Click to Pair Zalo",
+        "Enter this code in WhatsApp",
+        "K7QX-2M9P",
+        "On your phone: WhatsApp › Linked devices › Link a device › Link with phone number instead.",
+        "Waiting for your phone...",
+        "Use QR code instead",
+        "Next: DropNoise Filters"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C5",
+      "why": "an absence: the Zalo card has no pairing link"
+    },
+    {
+      "criterion": "C8",
+      "why": "error state not drawn; its words are in the criterion"
+    },
+    {
+      "criterion": "C9",
+      "why": "engine behaviour; nothing on screen"
+    },
+    {
+      "criterion": "C10",
+      "why": "restart behaviour"
+    }
+  ],
+  "differences": [
+    "The \"Use pairing code instead\" link is on the WhatsApp card in every state with a pair button, though only the added screens draw it.",
+    "The \"Simulate Scan\" button is prototype-only and is not built (C10).",
+    "The card texts \"personal sales account or official OA\" and \"personal or business profiles\" are replaced by those of C1 (proposal OS3)."
+  ]
+}
