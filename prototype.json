@@ -1,0 +1,132 @@
+{
+  "title": "Local Records search",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "the Settings pages and menu, from #T6"
+    ]
+  },
+  "screens": [
+    {
+      "id": "local-records",
+      "title": "Search results",
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C7"
+      ],
+      "shows": "Search, contact and dates, and the result table (added)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Delivery Status",
+        "18 Pending · 2 Failed",
+        "Local Records",
+        "4,812 Messages",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Local Records",
+        "Search the messages kept in the encrypted database on this computer",
+        "quotation",
+        "All contacts",
+        "2026-11-01 → 2026-11-26",
+        "Encrypted on this computer · 4,812 messages",
+        "Time (UTC+7)",
+        "App",
+        "Conversation",
+        "Sender",
+        "Direction",
+        "Message",
+        "2026-11-24 09:21",
+        "Zalo",
+        "Lan (Rivera Apparel)",
+        "You (Sales Rep)",
+        "Outbound",
+        "Hi Lan! I have attached the",
+        "quotation",
+        "with a 15% volume discount and 99.99% SLA commitment.",
+        "2026-11-18 14:05",
+        "WhatsApp",
+        "Robert Langdon (VP of Eng, GlobalTech)",
+        "Robert Langdon",
+        "Inbound",
+        "Please forward the enterprise licensing",
+        "quotation",
+        "for Gradion Data Platform On-Premise (100 seats).",
+        "2026-11-03 10:30",
+        "Zalo",
+        "Alexander (Customer)",
+        "You (Sales Rep)",
+        "Outbound",
+        "Hi Alexander, could you send me the latest",
+        "quotation",
+        "and features for the Gradion software?",
+        "Showing 3 of 3 messages"
+      ]
+    },
+    {
+      "id": "local-records-empty",
+      "title": "No results",
+      "criteria": [
+        "C4",
+        "C7"
+      ],
+      "shows": "The empty state with Clear filters (added)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Delivery Status",
+        "18 Pending · 2 Failed",
+        "Local Records",
+        "4,812 Messages",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Local Records",
+        "Search the messages kept in the encrypted database on this computer",
+        "invoice",
+        "Jordan Hayes (Craft Kitchen Group)",
+        "2026-11-01 → 2026-11-26",
+        "Encrypted on this computer · 4,812 messages",
+        "No messages match your search",
+        "Try other words, another contact or a wider date range.",
+        "Clear filters"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C5",
+      "why": "notice not drawn; its words are in the criterion"
+    },
+    {
+      "criterion": "C6",
+      "why": "speed; nothing on screen"
+    }
+  ],
+  "differences": [
+    "The sample shows a chosen date range; C1 starts at \"All dates\"."
+  ]
+}
