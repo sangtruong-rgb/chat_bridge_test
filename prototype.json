@@ -1,0 +1,335 @@
+{
+  "title": "Settings: accounts and theme",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "the Home page and its rail, from #T4"
+    ]
+  },
+  "screens": [
+    {
+      "id": "settings-accounts",
+      "title": "Accounts",
+      "criteria": [
+        "C1",
+        "C2",
+        "C10"
+      ],
+      "shows": "Settings menu and account cards (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Accounts",
+        "Zalo, WhatsApp Business sessions and pairings",
+        "Connected",
+        "Sale Personal",
+        "+84 988 889 999",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "Connected",
+        "Sale Gradion",
+        "+1 (555) 019-2834",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "+",
+        "Link Additional Messaging Account"
+      ]
+    },
+    {
+      "id": "account-unlink-1",
+      "title": "Unlink, step 1",
+      "criteria": [
+        "C5",
+        "C10"
+      ],
+      "shows": "Consequences and Proceed to Confirm (theirs)",
+      "text": [
+        "Security Authorization",
+        "Disconnect",
+        "Zalo Personal",
+        "?",
+        "Step 1 of 2: Please review the operational consequences before revoking this device pairing session.",
+        "Sale Personal",
+        "+84 988 889 999",
+        "To Be Unlinked",
+        "Immediate Consequences:",
+        "Active capturing for this channel will immediately halt.",
+        "Webhook forwarding to Margince CRM and Sheets will pause.",
+        "Local session keys will be purged from the secure keychain.",
+        "Cancel",
+        "Proceed to Confirm"
+      ]
+    },
+    {
+      "id": "account-unlink-2",
+      "title": "Unlink, step 2",
+      "criteria": [
+        "C5",
+        "C10"
+      ],
+      "shows": "Two statements to tick and Confirm & Unlink Session (theirs)",
+      "text": [
+        "Security Authorization",
+        "Final Confirmation",
+        "Step 2 of 2: Confirm both statements below to authorize permanent unlinking.",
+        "I understand that customer messages for",
+        "Sale Personal",
+        "will no longer be captured or synced.",
+        "I understand that reconnecting will require generating and scanning a new QR code from my mobile device.",
+        "Back",
+        "Confirm & Unlink Session"
+      ]
+    },
+    {
+      "id": "account-rescan",
+      "title": "Re-scan QR",
+      "criteria": [
+        "C3",
+        "C10"
+      ],
+      "shows": "The connect dialog with a QR code (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Choose Zalo or WhatsApp below and scan its QR code to link your account.",
+        "Zalo QR Code",
+        "00:58",
+        "✕",
+        "Simulate Scan",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Cancel",
+        "Next: Select Chats"
+      ]
+    },
+    {
+      "id": "account-add",
+      "title": "Add an account",
+      "criteria": [
+        "C7",
+        "C10"
+      ],
+      "shows": "Connect Your Messaging Account dialog with Cancel and Next: Select Chats (theirs)",
+      "text": [
+        "Connect Your Messaging Account",
+        "Choose Zalo or WhatsApp below and scan its QR code to link your account.",
+        "Zalo Account",
+        "Pair your personal sales account or official OA to start syncing.",
+        "Click to Pair Zalo",
+        "WhatsApp Account",
+        "Link international WhatsApp personal or business profiles.",
+        "Click to Pair WhatsApp",
+        "Cancel",
+        "Next: Select Chats"
+      ]
+    },
+    {
+      "id": "accounts-limit-revoked",
+      "title": "Three accounts, one session revoked",
+      "criteria": [
+        "C4",
+        "C8",
+        "C10"
+      ],
+      "shows": "A disconnected card and the disabled \"Account limit reached (3 of 3)\" (added)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "3 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Delivery Status",
+        "18 Pending · 2 Failed",
+        "Local Records",
+        "4,812 Messages",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Accounts",
+        "Zalo and WhatsApp sessions and pairings",
+        "Connected",
+        "Sale Personal",
+        "+84 988 889 999",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "Disconnected",
+        "Sale Gradion",
+        "+1 (555) 019-2834",
+        "Session revoked. Pair QR to reconnect.",
+        "Re-scan QR",
+        "Unlink",
+        "Connected",
+        "Sale APAC",
+        "+65 8123 4567",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "+",
+        "Account limit reached (3 of 3)"
+      ]
+    },
+    {
+      "id": "prefs-dark",
+      "title": "Preferences, dark",
+      "criteria": [
+        "C9",
+        "C10"
+      ],
+      "shows": "Theme choice (the language section is not built) (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Preferences",
+        "Appearance and language configuration",
+        "Appearance",
+        "Choose how Scylla looks on your screen. Supports automatic synchronization with your system settings.",
+        "Interface Theme",
+        "Select your preferred visual theme for the Scylla interface.",
+        "Light",
+        "Crisp high-contrast layout",
+        "Dark",
+        "Easy on the eyes in low light",
+        "System",
+        "Matches your OS preference",
+        "Theme applies immediately across all pages and components.",
+        "Display Language",
+        "Select your preferred language for the interface.",
+        "English (US)",
+        "Default international standard",
+        "Vietnamese",
+        "Tieng Viet localization pack",
+        "Language updates labels, formatting, and date localization."
+      ]
+    },
+    {
+      "id": "prefs-light",
+      "title": "Preferences, light",
+      "criteria": [
+        "C9",
+        "C10"
+      ],
+      "shows": "The light theme (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Light Mode",
+        "Version 1.0.4",
+        "Preferences",
+        "Appearance and language configuration",
+        "Appearance",
+        "Choose how Scylla looks on your screen. Supports automatic synchronization with your system settings.",
+        "Interface Theme",
+        "Select your preferred visual theme for the Scylla interface.",
+        "Light",
+        "Crisp high-contrast layout",
+        "Dark",
+        "Easy on the eyes in low light",
+        "System",
+        "Matches your OS preference",
+        "Theme applies immediately across all pages and components.",
+        "Display Language",
+        "Select your preferred language for the interface.",
+        "English (US)",
+        "Default international standard",
+        "Vietnamese",
+        "Tieng Viet localization pack",
+        "Language updates labels, formatting, and date localization."
+      ]
+    },
+    {
+      "id": "accounts-light",
+      "title": "Accounts, light",
+      "criteria": [
+        "C9",
+        "C10"
+      ],
+      "shows": "The light theme on Accounts (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Light Mode",
+        "Version 1.0.4",
+        "Accounts",
+        "Zalo, WhatsApp Business sessions and pairings",
+        "Connected",
+        "Sale Personal",
+        "+84 988 889 999",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "Connected",
+        "Sale Gradion",
+        "+1 (555) 019-2834",
+        "Ready to sync",
+        "Re-scan QR",
+        "Unlink",
+        "+",
+        "Link Additional Messaging Account"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C6",
+      "why": "result of an unlink; nothing new on screen"
+    }
+  ],
+  "differences": [
+    "\"WhatsApp Business\", \"Scylla\", \"Webhook forwarding … will pause\" and the \"Display Language\" section are replaced or left out (C2, C5, C9).",
+    "Re-scan shows only that account's channel card and closes when it reconnects (C3); \"Simulate Scan\" is not built.",
+    "The add and re-scan dialogs use the card texts of #T3.",
+    "Menu entries from other tickets (Delivery Status, Local Records) are not part of this ticket."
+  ]
+}
