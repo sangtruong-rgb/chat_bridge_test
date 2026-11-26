@@ -1,0 +1,169 @@
+{
+  "title": "DropNoise filters and rules",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "the Settings pages and menu, from #T6"
+    ]
+  },
+  "screens": [
+    {
+      "id": "dropnoise-wizard",
+      "title": "Step 2: DropNoise Filters",
+      "criteria": [
+        "C1",
+        "C11"
+      ],
+      "shows": "Four badges and the sample chat preview (defaults replaced by C2) (theirs)",
+      "text": [
+        "DropNoise Filters",
+        "Filter clutter, keep message edit audit trails, and strip non-sales noise.",
+        "Filter Badges",
+        "4",
+        "of",
+        "4",
+        "Active",
+        "Select All",
+        "•",
+        "Clear",
+        "Reactions",
+        "Message Edits",
+        "Stickers",
+        "Stories & Status",
+        "Back",
+        "Next: Select Chats",
+        "Alexander (Customer)",
+        "4",
+        "Filtered",
+        "Hi Alexander, could you send me the latest quotation and features for the Gradion software?",
+        "10:30 AM",
+        "Hello! Absolutely, I will send the PDF proposal and enterprise license breakdown right away.",
+        "Original [10:31 AM]: \"I will send the draft in 5m\"",
+        "👍 1",
+        "10:32 AM (Edited)",
+        "🐱",
+        "[Sticker: Animated Thumbs Up Cat]",
+        "10:33 AM",
+        "📷 Replied to your Story: \"Q4 Enterprise Launch 🚀\"",
+        "\"Looks great! Let us discuss pricing on the call tomorrow.\"",
+        "10:34 AM",
+        "Thank you! Everything looks solid. Let's arrange a quick demo call tomorrow at 10 AM.",
+        "10:34 AM",
+        "Perfect! I have reserved 10:00 AM on Google Meet. See you tomorrow!",
+        "Real-time transcript preview",
+        "4",
+        "noise rules active"
+      ]
+    },
+    {
+      "id": "dropnoise-settings",
+      "title": "Settings › Drop Noise with rules",
+      "criteria": [
+        "C2",
+        "C6",
+        "C7",
+        "C8",
+        "C10",
+        "C11"
+      ],
+      "shows": "Badges with Message Edits off, OTP card, Excluded Contacts, Blocked Words & Phrases (added)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Delivery Status",
+        "18 Pending · 2 Failed",
+        "Local Records",
+        "4,812 Messages",
+        "Drop Noise",
+        "3 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Drop Noise",
+        "Rules for messages that should not be forwarded",
+        "Filter Badges",
+        "3 of 4 Active",
+        "Select All",
+        "•",
+        "Clear",
+        "Reactions",
+        "Message Edits",
+        "Stickers",
+        "Stories & Status",
+        "One-time Codes (OTP)",
+        "Messages with a verification code, such as \"Your OTP is 482913\", are never sent.",
+        "Always on",
+        "Excluded Contacts",
+        "Messages from these people are never sent, not even from a synced group.",
+        "2 contacts",
+        "Linh Tran (Wife)",
+        "Zalo · Sale Personal",
+        "Remove",
+        "Vietcombank",
+        "Zalo · Sale Gradion",
+        "Remove",
+        "Add",
+        "Blocked Words & Phrases",
+        "Messages that contain any of these are never sent. Upper and lower case are treated the same.",
+        "3 rules",
+        "lương",
+        "số tài khoản",
+        "password",
+        "Add",
+        "Changes apply to messages received from now on. Messages already sent are not changed.",
+        "Alexander (Customer)",
+        "3 Filtered",
+        "Hi Alexander, could you send me the latest quotation and features for the Gradion software?",
+        "10:30 AM",
+        "Hello! Absolutely, I will send the PDF proposal and enterprise license breakdown right away.",
+        "Original [10:31 AM]: \"I will send the draft in 5m\"",
+        "👍 1",
+        "10:32 AM (Edited)",
+        "🐱",
+        "[Sticker: Animated Thumbs Up Cat]",
+        "10:33 AM",
+        "📷 Replied to your Story: \"Q4 Enterprise Launch 🚀\"",
+        "\"Looks great! Let us discuss pricing on the call tomorrow.\"",
+        "10:34 AM",
+        "Thank you! Everything looks solid. Let's arrange a quick demo call tomorrow at 10 AM.",
+        "10:34 AM",
+        "Perfect! I have reserved 10:00 AM on Google Meet. See you tomorrow!",
+        "10:35 AM",
+        "Real-time transcript preview",
+        "3 noise rules active"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C3",
+      "why": "forwarding rule"
+    },
+    {
+      "criterion": "C4",
+      "why": "forwarding rule"
+    },
+    {
+      "criterion": "C5",
+      "why": "forwarding rule; only its card is shown"
+    },
+    {
+      "criterion": "C9",
+      "why": "import rule"
+    }
+  ],
+  "differences": [
+    "The wizard shows all four badges active; C2 has Message Edits off.",
+    "The sample chat draws an edit as a struck \"Original\" line; per C3 an edit is a separate \"[edited] …\" message."
+  ]
+}
