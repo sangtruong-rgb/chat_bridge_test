@@ -1,0 +1,402 @@
+{
+  "title": "Google Sheets destination and Sheets Studio",
+  "binding": "look",
+  "source": "Your prototype https://newchat-bridge.vercel.app/ (screens marked \"theirs\"), plus screens drawn by the BA in the same look on top of it (marked \"added\"), approved by the user. Where a criterion gives other words or behaviour than a screen, the criterion wins.",
+  "images": true,
+  "drawnFrom": {
+    "commit": "8c1f51a2b680a07794fe521785b5a148a6efc921",
+    "files": [],
+    "unbuilt": [
+      "the Where to Send page, from #T6 and #T8"
+    ]
+  },
+  "screens": [
+    {
+      "id": "destination-step",
+      "title": "Step 5: Choose Forwarding Destination",
+      "criteria": [
+        "C1",
+        "C12"
+      ],
+      "shows": "Destination cards and Skip for now (theirs)",
+      "text": [
+        "Choose Forwarding Destination",
+        "Route synchronized leads and conversations to Margince CRM or Google Sheets.",
+        "Margince CRM",
+        "Primary CRM",
+        "Forward leads, deals, and customer conversations directly to Margince.",
+        "Connect",
+        "Google Sheets",
+        "Google OAuth",
+        "Sign in with Google to auto-create and stream to your default spreadsheet.",
+        "Login with Google",
+        "Back",
+        "Skip for now"
+      ]
+    },
+    {
+      "id": "google-logging-in",
+      "title": "Signing in with Google",
+      "criteria": [
+        "C2",
+        "C12"
+      ],
+      "shows": "\"Logging in...\" (theirs)",
+      "text": [
+        "Choose Forwarding Destination",
+        "Route synchronized leads and conversations to Margince CRM or Google Sheets.",
+        "Margince CRM",
+        "Primary CRM",
+        "Connected • Streaming to api.margince.com (realtime)",
+        "Configure",
+        "Connected",
+        "Google Sheets",
+        "Google OAuth",
+        "Sign in with Google to auto-create and stream to your default spreadsheet.",
+        "Logging in...",
+        "Back",
+        "Explore ChatBridge"
+      ]
+    },
+    {
+      "id": "google-connected",
+      "title": "Google connected",
+      "criteria": [
+        "C1",
+        "C2",
+        "C12"
+      ],
+      "shows": "Connected card and Explore ChatBridge (theirs)",
+      "text": [
+        "Choose Forwarding Destination",
+        "Route synchronized leads and conversations to Margince CRM or Google Sheets.",
+        "Margince CRM",
+        "Primary CRM",
+        "Forward leads, deals, and customer conversations directly to Margince.",
+        "Connect",
+        "Google Sheets",
+        "Google OAuth",
+        "Logged in as tuananh@gradion.ai • Auto-created ChatBridge_Transcripts_2026",
+        "Connected",
+        "Back",
+        "Explore ChatBridge"
+      ]
+    },
+    {
+      "id": "where-sheets",
+      "title": "Where to Send: Google Sheets Export",
+      "criteria": [
+        "C4",
+        "C12"
+      ],
+      "shows": "Account row and spreadsheet links (theirs)",
+      "text": [
+        "Return to Chats",
+        "Esc",
+        "Settings & Preferences",
+        "App configuration, accounts & integrations",
+        "Accounts",
+        "2 Connected",
+        "Where to Send",
+        "2 Targets Ready",
+        "Drop Noise",
+        "4 Rules Active",
+        "Preferences",
+        "Dark Mode",
+        "Version 1.0.4",
+        "Where to Send",
+        "Margince CRM webhook & Google Sheets output",
+        "Margince CRM Integration",
+        "Forward customer deals, transcripts, and contact cards into your pipeline.",
+        "CRM Webhook Endpoint URL",
+        "API Secret Token",
+        "Sync Frequency",
+        "Test CRM Connection",
+        "Google Sheets Export",
+        "Append new conversation transcripts into live spreadsheets.",
+        "G",
+        "tuananh@gradion.ai",
+        "Connected",
+        "Unlink",
+        "Connected Spreadsheet Links",
+        "3",
+        "spreadsheets",
+        "APAC_Client_Communications_Log",
+        "View Config",
+        "Unlink",
+        "ChatBridge_Transcripts_2026",
+        "View Config",
+        "Unlink",
+        "Q4_Enterprise_Sales_Pipeline",
+        "View Config",
+        "Unlink",
+        "Create New Sheet Link"
+      ]
+    },
+    {
+      "id": "studio-sheet",
+      "title": "Studio step 1",
+      "criteria": [
+        "C5",
+        "C12"
+      ],
+      "shows": "Select or create a spreadsheet (theirs)",
+      "text": [
+        "Back to Settings",
+        "Esc",
+        "Google Sheets Studio",
+        "Save Layout",
+        "1. Destination Sheet",
+        "2. Tabs Strategy",
+        "3. Table Workbench",
+        "Google Spreadsheet Destination",
+        "Search existing Google Drive sheets or type a new name to create a new sheet destination.",
+        "Select or Create Google Spreadsheet",
+        "Open in Sheets",
+        "ChatBridge_Transcripts_2026",
+        "Back to Settings",
+        "Next: Tabs Strategy"
+      ]
+    },
+    {
+      "id": "studio-tabs",
+      "title": "Studio step 2",
+      "criteria": [
+        "C6",
+        "C12"
+      ],
+      "shows": "Six tab strategies and the Contacts Directory option (theirs)",
+      "text": [
+        "Back to Settings",
+        "Esc",
+        "Google Sheets Studio",
+        "Save Layout",
+        "1. Destination Sheet",
+        "2. Tabs Strategy",
+        "3. Table Workbench",
+        "Spreadsheet Tabs Partitioning Strategy",
+        "Choose how transcripts are split across tabs: Single, Daily, Monthly, or by App Network.",
+        "Choose how messages are distributed across spreadsheet tabs. New sheets will be automatically provisioned when messages match criteria.",
+        "Messages",
+        "Single Tab (Default)",
+        "Messages",
+        "All transcripts are collected into a single unified worksheet",
+        "2026-10-30",
+        "2026-11-05",
+        "2026-11-06",
+        "Daily Tab",
+        "2026-11-14 (UTC+7)",
+        "Automatically creates a dedicated tab for each day",
+        "2026-10",
+        "2026-11",
+        "Monthly Tab",
+        "2026-11 (UTC+7)",
+        "Organizes transcripts by billing period and monthly review cycle",
+        "Zalo",
+        "WhatsApp",
+        "By App Network",
+        "Zalo, WhatsApp",
+        "Separates channels into distinct app worksheets",
+        "Lan",
+        "Marcus",
+        "David",
+        "By Contact Customer",
+        "Lan, Marcus, David",
+        "Maintains an individual ledger tab per customer contact",
+        "Zalo - 2026-11",
+        "Custom Pattern",
+        "{App} - {Month}",
+        "Flexible dynamic naming pattern with runtime tokens",
+        "Messages",
+        "Contacts Directory",
+        "Add Contacts Directory Summary Sheet",
+        "Automatically generates an auxiliary sheet containing contact names, phone numbers, app networks, and message volume totals.",
+        "Tab Enabled",
+        "Back",
+        "Next: Drag & Drop Columns"
+      ]
+    },
+    {
+      "id": "studio-columns",
+      "title": "Studio step 3",
+      "criteria": [
+        "C7",
+        "C12"
+      ],
+      "shows": "Columns, field palette and live preview (theirs)",
+      "text": [
+        "Back to Settings",
+        "Esc",
+        "Google Sheets Studio",
+        "Save Layout",
+        "1. Destination Sheet",
+        "2. Tabs Strategy",
+        "3. Table Workbench",
+        "Table Workbench & Live Spreadsheet Preview",
+        "Drag-and-drop columns directly in the table header to reorder fields, or click remove button.",
+        "Field Palette",
+        "2",
+        "available",
+        "Click + or drag directly into table header to add",
+        "Phone Number",
+        "Message ID",
+        "◢",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "1",
+        "Time (UTC+7)",
+        "App Network",
+        "Conversation / Chat",
+        "Sender Name",
+        "Direction",
+        "Message Content",
+        "2",
+        "2026-10-30 09:15",
+        "ZALO",
+        "Lan (Rivera Apparel)",
+        "Lan",
+        "Inbound",
+        "Hello! Our team is currently reviewing the Q4 budget for 200 sales reps using the software.",
+        "3",
+        "2026-10-30 09:20",
+        "ZALO",
+        "Lan (Rivera Apparel)",
+        "You (Sales Rep)",
+        "Outbound",
+        "Hi Lan! I have attached the quotation with a 15% volume discount and 99.99% SLA commitment.",
+        "4",
+        "2026-11-05 14:05",
+        "WHATSAPP",
+        "Marcus Sterling",
+        "You (Sales Rep)",
+        "Outbound",
+        "Hi Marcus, following up regarding the enterprise data compliance security sheet.",
+        "5",
+        "2026-11-05 14:12",
+        "WHATSAPP",
+        "Marcus Sterling",
+        "Inbound",
+        "Everything is approved by our APAC legal counsel. Ready for production rollout.",
+        "6",
+        "2026-11-06 10:30",
+        "ZALO",
+        "David Miller (Finance)",
+        "David Miller",
+        "Inbound",
+        "We have processed the wire transfer payment for the ChatBridge enterprise license contract.",
+        "7",
+        "2026-11-06 10:45",
+        "ZALO",
+        "David Miller (Finance)",
+        "You (Sales Rep)",
+        "Outbound",
+        "Thank you so much! The system has automatically activated perpetual team licenses.",
+        "8",
+        "2026-11-06 16:10",
+        "WHATSAPP",
+        "Elena Rostova",
+        "Inbound",
+        "Confirmed. The live Google Sheets transcript export integration is functioning properly.",
+        "Messages",
+        "Contacts Directory",
+        "100%",
+        "Back",
+        "Finish & Save Layout"
+      ]
+    },
+    {
+      "id": "google-unlink",
+      "title": "Disconnect Google account",
+      "criteria": [
+        "C10",
+        "C12"
+      ],
+      "shows": "Step 1 of the account unlink (theirs)",
+      "text": [
+        "Security Authorization",
+        "Disconnect Google Sheets Account?",
+        "Step 1 of 2: Please review the operational consequences before unlinking this integration.",
+        "tuananh@gradion.ai",
+        "Google OAuth Authorization",
+        "To Be Unlinked",
+        "Immediate Consequences:",
+        "Live transcript streaming to all connected Google Sheets will pause.",
+        "OAuth refresh tokens and Drive write permissions will be revoked.",
+        "Existing rows and formulas in Google Drive will remain preserved.",
+        "Cancel",
+        "Proceed to Confirm"
+      ]
+    },
+    {
+      "id": "sheet-unlink-1",
+      "title": "Unlink a spreadsheet, step 1",
+      "criteria": [
+        "C10",
+        "C12"
+      ],
+      "shows": "Consequences (theirs)",
+      "text": [
+        "Security Authorization",
+        "Unlink Spreadsheet Link?",
+        "Step 1 of 2: Please review the operational consequences before unlinking this integration.",
+        "APAC_Client_Communications_Log",
+        "ID: 1C77198302198421...",
+        "To Be Unlinked",
+        "Immediate Consequences:",
+        "New message rows will no longer append to this spreadsheet file.",
+        "Tab mapping and column schema bindings will be disconnected.",
+        "Existing historical transcripts in Google Drive remain safe.",
+        "Cancel",
+        "Proceed to Confirm"
+      ]
+    },
+    {
+      "id": "sheet-unlink-2",
+      "title": "Unlink a spreadsheet, step 2",
+      "criteria": [
+        "C10",
+        "C12"
+      ],
+      "shows": "Two statements and Confirm & Unlink Destination (theirs)",
+      "text": [
+        "Security Authorization",
+        "Final Confirmation",
+        "Step 2 of 2: Confirm both statements below to authorize permanent unlinking.",
+        "I understand that conversation logs will no longer sync or append to",
+        "APAC_Client_Communications_Log",
+        ".",
+        "I understand that re-linking will require re-configuring table presets and column mapping.",
+        "Back",
+        "Confirm & Unlink Destination"
+      ]
+    }
+  ],
+  "notShown": [
+    {
+      "criterion": "C3",
+      "why": "history rule"
+    },
+    {
+      "criterion": "C8",
+      "why": "delivery behaviour"
+    },
+    {
+      "criterion": "C9",
+      "why": "read-only Studio not drawn; \"Read-only mode\" label"
+    },
+    {
+      "criterion": "C11",
+      "why": "expired sign-in row not drawn; its words are in the criterion"
+    }
+  ],
+  "differences": [
+    "The Margince card on step 5 belongs to #T12.",
+    "The \"Tab name pattern\" field for Custom Pattern is not drawn (C6).",
+    "The account unlink says \"will stop\", not \"will pause\" (C12).",
+    "The account unlink step 2 is not drawn; its statements are in C10."
+  ]
+}
